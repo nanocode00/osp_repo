@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link type="text/css" href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+		<title>Upload Page</title>
+	</head>
+	<body>
+		<input type="file" class="real-upload" accept="image/*" required multiple>
+		<div class="upload">UPLOAD</div>
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	</body>
+</html>

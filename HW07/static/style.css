@@ -1,0 +1,11 @@
+.real-upload {
+	display: none;
+}
+
+.upload {
+	align-items: center;
+	background-color: black;
+	color: white;
+	border-radius: 30px;
+	padding: 10px;
+}
