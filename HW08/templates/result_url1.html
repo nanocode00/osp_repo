@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>List of Presidents of the United States</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for name in names %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ name }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

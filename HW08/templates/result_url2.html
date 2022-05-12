@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>stock price</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>price</th>
+                    <th>change</th>
+                    <th>percent</th>
+                </tr>            
+            </thead>
+            <tbody>
+                <tr>
+                    <th>KOSPI</th>
+                    {% for value in kospi %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <th>KOSDAQ</th>
+                    {% for value in kosdaq %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <th>KPI200</th>
+                    {% for value in kpi200 %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
