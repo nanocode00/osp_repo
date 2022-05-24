@@ -1,0 +1,7 @@
+curl -H 'Content-Type: application/json' -XPUT localhost:9200/books/_doc/1 -d'
+{
+	"title" : "Opensource Programming",
+	"authors" : [ "Cody Barns", "Karl Jain" ],
+	"started" : "2020-05-11",
+	"pages" : 200
+}'

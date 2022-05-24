@@ -1,0 +1,12 @@
+curl -H 'Content-Type: application/json' -XPUT localhost:9200/movies/_bulk -d'
+{ "create" : { } }
+{ "id" : "1000", "title" : "Star Trek Beyond", "year" : 2016, "genre" : [ "Action", "Adventure", "Sci-Fi" ] }
+{ "create" : { } }
+{ "id" : "1001", "title" : "Star Wars: Episode VII - The Force Awakens", "year" : 2015, "genre" : [ "Action", "Adventure", "Fantasy", "Sci-Fi", "IMAX" ] }
+{ "create" : { } }
+{ "id" : "1002", "title" : "Interstellar", "year" : 2014, "genre" : [ "Sci-Fi", "IMAX" ] }
+{ "create" : { } }
+{ "id" : "1003", "title" : "Dark Knight, The", "year" : 2008, "genre" : [ "Action", "Crime", "Drama", "IMAX" ] }
+{ "create" : { } }
+{ "id" : "1004", "title" : "Plan 9 from Outer Space", "year" : 1959, "genre" : [ "Horror", "Sci-Fi" ] }
+'

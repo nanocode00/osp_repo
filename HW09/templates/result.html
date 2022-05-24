@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Word frequency</title>
+    </head>
+    <body>
+        <h3>url : {{ data.url }}</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>word</th>
+                    <th>frequency</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(data.words | length) %}
+                <tr>
+                    <td>{{ data.words[i] }}</td>
+                    <td>{{ data.frequencies[i] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
